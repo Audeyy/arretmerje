@@ -1,0 +1,20 @@
+CREATE TABLE `arretmerje`.`user` ( 
+  `id` INT(11) NOT NULL AUTO_INCREMENT, 
+  `civility` VARCHAR(10) NOT NULL, 
+  `firstname` VARCHAR(50) NOT NULL, 
+  `lastname` VARCHAR(50) NOT NULL, 
+  `birthdate` DATE NOT NULL, 
+  `address` VARCHAR(100) NOT NULL,
+  `zipcode` INT(10) NOT NULL,
+  `city` VARCHAR(100) NOT NULL,
+  `country` VARCHAR(50) NOT NULL,
+  `phone` INT(30) NOT NULL,
+  `mobile` INT(30) NOT NULL,
+  `email` VARCHAR(60) NOT NULL,
+  `nationality` VARCHAR(30) NOT NULL,
+  `password` VARCHAR(64) NOT NULL,
+  `admin` BOOLEAN NOT NULL DEFAULT FALSE,
+  `createdAt` DATETIME NOT NULL DEFAULT 'NOW()',
+  `lastConnexionDate` DATETIME NOT NULL, 
+  PRIMARY KEY (`id`)
+) ENGINE = InnoDB;

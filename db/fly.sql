@@ -1,0 +1,12 @@
+CREATE TABLE `arretmerje`.`fly` (
+  `id` INT(11) NOT NULL,
+  `departureAirport` VARCHAR(150) NOT NULL,
+  `arrivalAirport` VARCHAR(150) NOT NULL,
+  `city_id` INT(11) NOT NULL,
+  `country_id` INT(11) NOT NULL,
+  `departureDate` DATE NOT NULL,
+  `arrivalDate` DATE NOT NULL,
+  `departureTime` TIME NOT NULL,
+  `arrivalTime` TIME NOT NULL,
+  `price` DOUBLE NOT NULL
+) ENGINE = InnoDB;

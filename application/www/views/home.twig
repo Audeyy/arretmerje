@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{% block title %}Arret Mer'je{% endblock %}</title>
+  {% block useJs %}{% endblock %}
+</head>
+<body>
+
+  <!-- En-tête commune -->
+  <header>
+    <div class="logo-title">
+    <a class="logo" href="{{ url('home') }}">
+    <h1>Arret Mer'Je</h1>
+    </a>
+    </div>
+    <div class="nav-container">
+    <nav class="user-interface">
+    <a class="button" href="{{ url('login') }}">Connexion</a>
+    <a class="button" href="{{ url('create') }}">Créer un compte</a>
+    </nav>
+    </div>
+  </header>
+
+  <main>
+  <!-- Affichage du template lié à la vue -->
+  {% block main %}{% endblock %}
+  </main>
+
+  {% block footer %}
+  <footer>
+
+  </footer>
+  {% endblock %}
+
+  <!-- Code principal JavaScript de l'application -->
+
+</body>
+</html>
